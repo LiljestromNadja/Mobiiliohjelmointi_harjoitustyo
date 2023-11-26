@@ -36,7 +36,7 @@ export default function AllMemos( { navigation } ) {
     setModalOpen(false);
     }
 
-/*     //memolistan päivitys, vanhin ensin
+/*  //memolistan päivitys, vanhin ensin
     const updateList = () => {
         db.transaction(tx => {
           tx.executeSql('select * from memo;', [], (_, { rows }) => {
@@ -113,7 +113,7 @@ export default function AllMemos( { navigation } ) {
 
             <MaterialIcons
                 name="add"
-                size={24}
+                size={30}
                 style={styles.modalToggle}
                 onPress={() => setModalOpen(true)}
             />          
