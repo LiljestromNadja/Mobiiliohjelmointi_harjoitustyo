@@ -59,10 +59,7 @@ export default function App() {
           component={Testisivu}
           options={{
             headerStyle: {backgroundColor: '#ffa07a'},headerTintColor: '#fff', headerTitleAlign:'center'}}
-        /> 
- 
-
-  
+        />   
            
       </Stack.Navigator>
     </NavigationContainer>
