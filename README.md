@@ -1,6 +1,6 @@
 # Memo-app  
 
-Mobiiliohjelmointi-kurssin harjoitustyönä toteutettu Memo-mobiilisovellus, jossa käyttäjä voi lisätä/poistaa muistiinpanoja. 
+Mobiiliohjelmointi-kurssin harjoitustyö, Memo-mobiilisovellus, jossa käyttäjä voi lisätä/poistaa muistiinpanoja. 
 
 ## Käytetyt teknologiat/komponentit  
 
