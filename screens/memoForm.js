@@ -1,3 +1,4 @@
+//Lomake uudelle memolle
 import React from "react";
 import { StyleSheet, Button, TextInput, View, Text} from "react-native";
 import { globalStyles } from "../styles/globalstyle";
@@ -6,8 +7,8 @@ import * as yup from 'yup';
 
 
 const memoValidationSchema = yup.object({
-    memosubject: yup.string().required().min(5), //syötteen pitää olla string-muotoista, kenttä ei voi olla tyhjä, min 5 mekkiä
-    memocontent: yup.string().required().min(5)
+    memosubject: yup.string().required().min(4), //syötteen pitää olla string-muotoista, kenttä ei voi olla tyhjä, min 4 merkkiä
+    memocontent: yup.string().required().min(5) //syötteen pitää olla string-muotoista, kenttä ei voi olla tyhjä, min 5 merkkiä
 })
 
 export default function MemoFormikForm( {addMemo} ) { 

@@ -1,28 +1,20 @@
-//"Etusivu"
+//"Etusivu/kotinäyttö"
 import React from "react";
 import { StyleSheet, View, Text, Button } from "react-native";
-import { globalStyles } from "../styles/globalstyle"; //globaali tyylitiedosto
+import { globalStyles } from "../styles/globalstyle"; 
 import { AntDesign } from '@expo/vector-icons'; 
 
 export default function HomeScreen( {navigation}) {
     return (
         <View style={styles.homeContainer}>
-{/*             <AntDesign
-                name="closecircle"
-                size={24}
-                color="black"
-                style={styles.exitIcon}
-                //onPress={() => deletePressed(item)}
-                onPress={() => navigation.navigate('AllMemos')}
-            /> */}
+
             <View style={styles.homeView}>
                 <Text style={styles.homeTitleText}> Welcome to Memo App! </Text>
-                {/* <Text style={styles.homePgraph}> This is a simple memo application.. </Text> */}
             </View>
 
             <View style={styles.buttonView}>
                 <Button title=' memos' color='#ff7f50' onPress={() => navigation.navigate('AllMemos')}      /> 
-                <Button title=' go to test page' color='#ff7f50' onPress={() => navigation.navigate('Testisivu')}      />
+                {/* <Button title=' go to test page' color='#ff7f50' onPress={() => navigation.navigate('Testisivu')}      /> */}
                 <Button title=' about' color='#ff7f50' onPress={() => navigation.navigate('About')}      />   
             </View>
 

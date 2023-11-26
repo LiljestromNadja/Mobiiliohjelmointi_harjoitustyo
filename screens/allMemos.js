@@ -1,9 +1,8 @@
-//"Kotikomponentti / näyttö"
+//"Kaikki memot"
 import React, { useEffect, useState } from "react";
 import { StyleSheet, View, Text, FlatList, TouchableOpacity, Modal, TouchableWithoutFeedback, Keyboard } from "react-native";
-import { globalStyles } from "../styles/globalstyle"; //globaali tyylitiedostoimport { userNavigatio }
+import { globalStyles } from "../styles/globalstyle"; 
 import * as SQLite from 'expo-sqlite';
-import { Button } from "@rneui/base";
 import Card from "../shared/card";
 import { MaterialIcons } from '@expo/vector-icons'
 import MemoFormikForm from './memoForm';
@@ -36,7 +35,6 @@ export default function AllMemos( { navigation } ) {
     )
     setModalOpen(false);
     }
-
 
     //memolistan päivitys
     const updateList = () => {
@@ -81,11 +79,8 @@ export default function AllMemos( { navigation } ) {
                             />
                             <MemoFormikForm addMemo={addMemo} /> 
                     </View>
-                </TouchableWithoutFeedback>
-                
+                </TouchableWithoutFeedback>                
             </Modal>
-
-
 
             <FlatList
                 data={memos}
@@ -93,16 +88,14 @@ export default function AllMemos( { navigation } ) {
                 renderItem={({ item }) => (
                     <TouchableOpacity onPress={() => navigation.navigate('ShowMemo', {item})}>
                         <Card>
-                            <Text style={globalStyles.titleText}> {item.memosubject}</Text>
-                                                       
+                            <Text style={globalStyles.titleText}> {item.memosubject}</Text> 
+                            {/* <Text style={globalStyles.paragraph}> {item.memocontent}</Text>    */}                                                    
                                 <MaterialIcons
                                     name="delete"
                                     size={24}
                                     style={styles.modalClose}
                                     onPress={() => deleteMemo(item.id)}
                                 />
-                            
-
                         </Card>
                     </TouchableOpacity>
                 )}
@@ -113,8 +106,7 @@ export default function AllMemos( { navigation } ) {
                 size={24}
                 style={styles.modalToggle}
                 onPress={() => setModalOpen(true)}
-            />
-            
+            />          
             
         </View>
     )
@@ -150,4 +142,4 @@ const styles = StyleSheet.create({
     
 })
 
- {/*<Button title="Go to About Memos" onPress={() => navigation.navigate("About")}/>*/}
+ 

@@ -19,24 +19,21 @@ export default function AboutMemos( {navigation}) {
             <Text style={styles.aboutPgraph}>This simple Memo app was developed during a mobile programming course </Text>
             
             
-{/*             <Text style={{marginTop:20, fontWeight: 'bold', textAlign:'center'}}>Technologies/Components:</Text>
+            <Text style={{marginTop:20, fontWeight: 'bold', textAlign:'center'}}>Technologies/Components:</Text>
             
             
             <Text style={styles.aboutList}> Expo Go </Text>
             <Text style={styles.aboutList}> Formik form </Text>
-            <Text style={styles.aboutList}> React native </Text>
             <Text style={styles.aboutList}> React Native Card </Text>
-            <Text style={styles.aboutList}> Stack Navigation </Text>
-            <Text style={styles.aboutList}> Yup validation</Text> */}
+            <Text style={styles.aboutList}> React Native Flatlist </Text>
+            <Text style={styles.aboutList}> React Native Modal </Text>
+            <Text style={styles.aboutList}> React Native Stack Navigation </Text>
+            <Text style={styles.aboutList}> React Native Touchables </Text>
+            <Text style={styles.aboutList}> Yup validation</Text> 
 
-
-
-
-
-
-            <View style={styles.buttonstyle}>
+{/*             <View style={styles.buttonstyle}>
                 <Button title=' go to test page' color='#ff7f50' onPress={() => navigation.navigate('Testisivu')}      />  
-            </View>
+            </View> */}
         </View>
     )
 }

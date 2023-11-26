@@ -2,12 +2,14 @@
 
 Mobiiliohjelmointi-kurssin harjoitustyönä toteutettu Memo-mobiilisovellus, jossa käyttäjä voi lisätä/poistaa muistiinpanoja. 
 
-## Käytetyt teknologiat  
+## Käytetyt teknologiat/komponentit  
 
-- React Navigation Stack
-- React Native Screens
-- React Native Modal
-- Expo SQLite
 - Formik
+- Expo SQLite
+- React Native Card
+- React Native Flatlist
+- React Native Modal
+- React Navigation Stack
+- React Native Touchables
 - Yup
 
