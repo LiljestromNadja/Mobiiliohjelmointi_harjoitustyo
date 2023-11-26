@@ -28,12 +28,6 @@ export default function App() {
         component={HomeScreen}        
         options={{
           title:'Welcome!',
-          /* headerRight: () => (
-          <Button
-            onPress={() => alert('This is a button!')}
-            title="Info"
-            color="#e9967a"
-          />), */
           headerStyle: {backgroundColor: '#ffa07a'},headerTintColor: '#fff', headerTitleAlign:'center'}}
         />
 
@@ -57,12 +51,6 @@ export default function App() {
         component={ShowMemo} 
         options={{ 
           title: 'Memo Details', 
-          /* headerRight: () => (
-          <Button
-            onPress={() => alert('This is a button!')}
-            title="Info"
-            color="#e9967a"
-          />), */
           headerStyle: {backgroundColor: '#ffa07a'},headerTintColor: '#fff', headerTitleAlign:'center'}}         
         />  
 
