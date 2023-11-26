@@ -36,7 +36,7 @@ export default function AllMemos( { navigation } ) {
     setModalOpen(false);
     }
 
-    //memolistan päivitys
+/*     //memolistan päivitys, vanhin ensin
     const updateList = () => {
         db.transaction(tx => {
           tx.executeSql('select * from memo;', [], (_, { rows }) => {
@@ -44,7 +44,17 @@ export default function AllMemos( { navigation } ) {
             setMemos(rows._array)
           }); 
         });
-      }
+      } */
+
+    //memolistan päivitys, uusin (suurin id) ensin
+    const updateList = () => {
+        db.transaction(tx => {
+            tx.executeSql('select * from memo  where id < 1000000 order by id desc;', [], (_, { rows }) => {
+            console.log("--- home.js updateList: " , rows);
+            setMemos(rows._array)
+            }); 
+        });
+    }
 
     //Poistetaan memo
     const deleteMemo= (id) => {
