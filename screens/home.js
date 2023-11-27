@@ -12,11 +12,15 @@ export default function HomeScreen( {navigation}) {
                 <Text style={styles.homeTitleText}> Welcome to Memo App! </Text>
             </View>
 
+            
             <View style={styles.buttonView}>
                 <Button title=' memos' color='#ff7f50' onPress={() => navigation.navigate('AllMemos')}      /> 
                 {/* <Button title=' go to test page' color='#ff7f50' onPress={() => navigation.navigate('Testisivu')}      /> */}
+            </View>
+            <View style={styles.buttonView}>
                 <Button title=' about' color='#ff7f50' onPress={() => navigation.navigate('About')}      />   
             </View>
+            
 
         </View>
     )
@@ -38,7 +42,7 @@ const styles = StyleSheet.create({
         textAlign:"center"
     },
     homeContainer: {
-        flex: 1, //koko näyttö
+        flex: 3, //koko näyttö
         padding: 24,
     }, 
     homeTitleText: {
@@ -64,13 +68,12 @@ const styles = StyleSheet.create({
         margin: 10,
         padding: 10,
         justifyContent: 'space-between', */
-        marginEnd: 20, 
-        marginHorizontal: 20,
-        padding: 20,
-        marginVertical: 20
-
-           
+        marginEnd: 30, 
+        marginHorizontal: 30,
+        padding: 10,
+        marginVertical: 2           
     }
+    
   
   })
   
